@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="../css/style.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Choose User</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+    <center>
+
+        <h1>STUDENT HUB PORTAL</h1>
+        <hr>
+
+        <h2>Who Are You?</h2>
+        <p>Select your role to continue.</p>
+
+        <table border="1" cellpadding="20" cellspacing="20">
+
+            <tr>
+
+                <!-- Student -->
+
+                <td align="center">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5YMtLJCm_af1JLvBf8pAyuslI1_II2Lt-LA&s"
+                    
+                         width="150">
+
+                    <h2>Student</h2>
+
+                    <p>
+                        Login as a Student
+                    </p>
+
+                    <a href="student_auth.html">
+                        <button>Continue</button>
+                    </a>
+
+                </td>
+
+                <!-- Admin -->
+
+                <td align="center">
+
+                    <img src="data:image/png;base64,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"
+                         alt="Admin"
+                         width="150">
+
+                    <h2>Admin</h2>
+
+                    <p>
+                        Login as an Administrator
+                    </p>
+
+                    <a href="admin-login.html">
+                        <button>Continue</button>
+                    </a>
+
+                </td>
+
+            </tr>
+
+        </table>
+
+        <br>
+
+        <a href="index.html">
+            <button>Back</button>
+        </a>
+
+    </center>
+
+</body>
+</html>

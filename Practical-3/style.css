@@ -1,0 +1,636 @@
+/* Whole Page */
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f7fc;
+    margin:0;
+    padding:30px;
+    text-align:center;
+}
+
+/* Logo */
+img{
+    border-radius:10px;
+}
+
+/* Headings */
+h1{
+    color:#003366;
+}
+
+h2{
+    color:#0056b3;
+}
+
+p{
+    color:#555;
+}
+
+/* Table */
+table{
+    margin:40px auto;
+    border-collapse:separate;
+    border-spacing:40px;
+}
+
+/* Cards */
+td{
+    width:300px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+td:hover{
+    transform:translateY(-8px);
+}
+
+/* Buttons */
+button{
+    background:#007BFF;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    font-size:16px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+hr{
+    width:80%;
+}
+
+/* Form Table */
+table{
+    margin:auto;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* Table Cells */
+td{
+    text-align:left;
+    font-weight:bold;
+}
+
+/* Input Boxes */
+input[type="text"],
+input[type="password"]{
+    width:300px;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+}
+
+/* Checkbox */
+input[type="checkbox"]{
+    margin-right:8px;
+}
+
+/* Buttons */
+button{
+    background:#007BFF;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+/* Links */
+a{
+    text-decoration:none;
+    color:#0056b3;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+/* Horizontal Line */
+hr{
+    width:80%;
+}
+
+/* Mobile Responsive */
+@media(max-width:600px){
+
+    input[type="text"],
+    input[type="password"]{
+        width:90%;
+    }
+
+    table{
+        width:95%;
+    }
+
+    button{
+        width:90%;
+    }
+}
+/* =====================================
+   GENERAL PAGE
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eaf4ff, #f8fbff);
+
+    margin: 0;
+    padding: 0;
+
+    color: #333;
+}
+
+
+/* =====================================
+   HEADER
+   FLEXBOX
+===================================== */
+
+.header {
+    background: white;
+
+    padding: 25px 40px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.header-content {
+
+    /* FLEXBOX */
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+    
+    align-items: center;
+    gap: 12px;
+}
+
+.header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:white;
+
+    padding:15px 40px;
+
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+
+    flex-wrap:wrap;
+
+}
+
+
+/* Header Text */
+
+.header-text {
+    text-align: left;
+}
+
+h1 {
+    color: #003366;
+
+    font-size: 40px;
+
+    margin: 0 0 8px 0;
+}
+
+.header-text h3 {
+    color: #666;
+
+    margin: 0;
+
+    font-weight: normal;
+}
+
+
+/* =====================================
+   MAIN SECTION
+   CSS GRID
+===================================== */
+
+.welcome-section {
+
+    /* CSS GRID */
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+
+    max-width: 1000px;
+
+    margin: 70px auto;
+
+    padding: 20px;
+}
+
+
+/* =====================================
+   WELCOME CARD
+===================================== */
+
+.welcome-content {
+
+    background: white;
+
+    padding: 50px 40px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s;
+}
+
+
+/* Card Hover */
+
+.welcome-content:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =====================================
+   INFORMATION CARD
+===================================== */
+
+.info-card {
+
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+
+    color: white;
+
+    padding: 50px 40px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+
+.info-card:hover {
+
+    transform: translateY(-8px);
+}
+
+
+.info-card h2 {
+
+    color: white;
+
+    font-size: 28px;
+}
+
+
+.info-card p {
+
+    color: white;
+
+    line-height: 1.7;
+
+    font-size: 16px;
+}
+
+
+/* =====================================
+   HEADINGS
+===================================== */
+
+h2 {
+
+    color: #0056b3;
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+
+p {
+
+    color: #555;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================
+   BUTTON
+   FLEXBOX
+===================================== */
+
+button {
+
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+
+    color: white;
+
+    border: none;
+
+    padding: 13px 30px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    margin-top: 20px;
+
+    transition: 0.3s;
+
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+
+button:hover {
+
+    transform: scale(1.05);
+
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4);
+}
+
+
+/* =====================================
+   LINKS
+===================================== */
+
+a {
+
+    text-decoration: none;
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+
+    background: #003366;
+
+    padding: 18px;
+
+    text-align: center;
+
+    margin-top: 40px;
+}
+
+
+footer p {
+
+    color: white;
+
+    margin: 0;
+
+    font-size: 14px;
+}
+
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 700px) {
+
+    /* Header becomes vertical */
+
+    .header-content {
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .header-text {
+
+        text-align: center;
+    }
+
+
+    h1 {
+
+        font-size: 28px;
+    }
+
+
+    .header-text h3 {
+
+        font-size: 16px;
+    }
+
+
+    /* Grid becomes one column */
+
+    .welcome-section {
+
+        grid-template-columns: 1fr;
+
+        margin: 35px auto;
+
+        padding: 15px;
+    }
+
+
+    .welcome-content,
+    .info-card {
+
+        padding: 35px 25px;
+    }
+
+
+    button {
+
+        width: 80%;
+    }
+}
+/* Remove default spacing */
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #222;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: #1f4fb5;
+    background-color: white;
+    padding: 10px 18px;
+    padding-top: 10px;
+    transform: translateY(26px);
+    
+    font-size: 16px;
+}
+
+.nav-btn:hover {
+    background-color: #1f4fb5;
+    color: white;
+}
+.nav .active{
+    color:#1747ad;
+    font-weight:bold;
+}   
+
+/* Student Form */
+.student-form {
+    width: 400px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    text-align: left;
+}
+
+.student-form h1 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.student-form p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.student-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #003366;
+}
+
+.student-form input[type="text"],
+.student-form input[type="email"],
+.student-form input[type="tel"],
+.student-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.student-form input:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+.student-form input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.student-form button {
+    display: block;
+    margin: 25px auto 0;
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.student-form button:hover {
+    background: #0056b3;
+}
+
+.student-form a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.student-form a:hover {
+    text-decoration: underline;
+}
+/* Contact Message Box */
+
+.student-form textarea {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+
+    resize: vertical;
+}
+
+.student-form textarea:focus {
+    outline: none;
+    border-color: #007BFF;
+}

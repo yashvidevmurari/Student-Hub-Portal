@@ -1,0 +1,66 @@
+[
+    {
+        "enrollment": "25DCS025",
+        "name": "Yashvi",
+        "course": "DCS",
+        "year": 2,
+        "attendance": 92,
+        "result": "PASS"
+    },
+    {
+        "enrollment": "25DCS042",
+        "name": "Krenisha",
+        "course": "DCS",
+        "year": 2,
+        "attendance": 88,
+        "result": "PASS"
+    },
+    {
+        "enrollment": "25DCS107",
+        "name": "Niksha",
+        "course": "DCS",
+        "year": 2,
+        "attendance": 95,
+        "result": "PASS"
+    },
+    {
+        "enrollment": "25DCS115",
+        "name": "Rahul",
+        "course": "DCS",
+        "year": 2,
+        "attendance": 81,
+        "result": "PASS"
+    },
+    {
+        "enrollment": "25DCS126",
+        "name": "Priya",
+        "course": "DCS",
+        "year": 2,
+        "attendance": 76,
+        "result": "PASS"
+    },
+    {
+        "enrollment": "25DCE138",
+        "name": "Amit",
+        "course": "DCE",
+        "year": 2,
+        "attendance": 69,
+        "result": "PASS"
+    },
+    {
+        "enrollment": "25DCE149",
+        "name": "Neha",
+        "course": "DCE",
+        "year": 2,
+        "attendance": 91,
+        "result": "PASS"
+    },
+    {
+        "enrollment": "25DCE155",
+        "name": "Riya",
+        "course": "DCE",
+        "year": 2,
+        "attendance": 62,
+        "result": "PASS"
+    }
+]

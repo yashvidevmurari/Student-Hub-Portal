@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <img src="https://img.icons8.com/bubbles/1200/charotar-university.jpg"
+                     alt="University Logo"
+                     width="50"
+                     height="50">
+
+                <h2>Student Hub</h2>
+
+            </div>
+
+        </nav>
+
+        <div class="nav">
+
+            <a href="student_auth.html" class="nav-btn">
+                Back
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <h1>Student Registration</h1>
+
+    <p class="registration-subtitle">
+        Create your Student Hub account.
+    </p>
+
+
+    <!-- REGISTRATION FORM -->
+
+    <form class="student-form"
+          id="registrationForm"
+          action="student-signup.php"
+          method="POST"
+          novalidate>
+
+        <h2>Student Registration</h2>
+
+
+        <!-- FULL NAME -->
+
+        <label>Full Name</label>
+
+        <input type="text"
+               id="name"
+               name="name"
+               placeholder="Enter your full name">
+
+        <span id="nameError"></span>
+
+
+        <!-- EMAIL -->
+
+        <label>Email Address</label>
+
+        <input type="email"
+               id="email"
+               name="email"
+               placeholder="Enter your email">
+
+        <span id="emailError"></span>
+
+
+        <!-- PHONE NUMBER -->
+
+        <label>Phone Number</label>
+
+        <input type="tel"
+               id="mobile"
+               name="mobile"
+               placeholder="Enter your phone number">
+
+        <span id="mobileError"></span>
+
+
+        <!-- PASSWORD -->
+
+        <label>Password</label>
+
+        <input type="password"
+               id="password"
+               name="password"
+               placeholder="Create password">
+
+        <span id="passwordError"></span>
+
+
+        <!-- CONFIRM PASSWORD -->
+
+        <label>Confirm Password</label>
+
+        <input type="password"
+               id="confirmPassword"
+               name="confirmPassword"
+               placeholder="Confirm password">
+
+        <span id="confirmPasswordError"></span>
+
+
+        <!-- COURSE -->
+
+        <label>Course</label>
+
+        <select id="course" name="course">
+
+            <option value="">Select Course</option>
+
+            <option>BCA</option>
+            <option>BBA</option>
+            <option>B.Tech</option>
+            <option>MCA</option>
+
+        </select>
+
+        <span id="courseError"></span>
+
+
+        <!-- YEAR -->
+
+        <label>Year</label>
+
+        <select id="year" name="year">
+
+            <option value="">Select Year</option>
+
+            <option>First Year</option>
+            <option>Second Year</option>
+            <option>Third Year</option>
+            <option>Fourth Year</option>
+
+        </select>
+
+        <span id="yearError"></span>
+
+
+        <!-- GENDER -->
+
+        <label>Gender</label>
+
+        <input type="radio"
+               name="gender"
+               value="Male">
+
+        Male
+
+        <input type="radio"
+               name="gender"
+               value="Female">
+
+        Female
+
+        <input type="radio"
+               name="gender"
+               value="Other">
+
+        Other
+
+        <span id="genderError"></span>
+
+
+        <!-- TERMS -->
+
+        <label>
+
+            <input type="checkbox"
+                   id="terms"
+                   name="terms"
+                   value="accepted">
+
+            I accept Terms and Conditions
+
+        </label>
+
+        <span id="termsError"></span>
+
+
+        <!-- REGISTER BUTTON -->
+
+        <button type="submit">
+            Register
+        </button>
+
+
+        <p>
+            Already have an account?
+
+            <a href="student-login.html">
+                Login
+            </a>
+        </p>
+
+    </form>
+
+
+    <footer>
+
+        <p>© 2026 Student Hub Portal</p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="../js/registration.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+     <header class="header">   
+     <nav class="navbar">
+
+        <div class="logo">
+            <img src="https://img.icons8.com/bubbles/1200/charotar-university.jpg"
+                 alt="University Logo" 
+                 width="50"
+                 height="50">
+            <h2>Student Hub</h2>
+        </div>
+
+    </nav>
+
+     <nav class="navbar">
+
+        <div class="nav">
+            <a href="student_auth.html" class="nav-btn">Back</a>
+        
+            
+        </div>
+
+    </nav>
+
+</header>
+ 
+        <h2>Student Login</h2>
+
+        <p>
+            Login to continue to your dashboard.
+        </p>
+
+<form class="student-form" action="auth-login.php" method="POST">
+
+    <input type="hidden" name="role" value="student">
+
+    <label for="login">Username or Email</label>
+
+    <input type="text"
+           id="login"
+           name="login"
+           placeholder="Enter username or email"
+           autocomplete="username"
+           required>
+
+
+    <label for="password">Password</label>
+
+    <input type="password"
+           id="password"
+           name="password"
+           placeholder="Enter Password"
+           autocomplete="current-password"
+           required>
+
+
+    <div>
+        <input type="checkbox"
+               id="remember"
+               name="remember"
+               value="1">
+
+        <label for="remember">Remember me for 30 days</label>
+    </div>
+
+
+    <br>
+
+    <button type="submit">LOGIN</button>
+
+</form>
+    
+
+        <a href="#">
+            Forgot Password?
+        </a>
+
+        <br>
+
+        <p>
+            Don't have an account?
+        </p>
+
+        <a href="student-signup.html">
+            <button>
+                SIGN UP
+            </button>
+        </a>
+        <br>
+         <footer>
+        <p>© 2026 Student Hub Portal</p>
+    </footer>
+
+
+</body>
+
+</html>
